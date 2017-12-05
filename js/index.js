@@ -67,8 +67,6 @@ $(function() {
 			});
 		},
 		twitter : function (){
-			
-			alert('twitter');
 			$.ajax({
 				url: './twitter.php',
 				dataType: "html",
