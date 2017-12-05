@@ -2,8 +2,6 @@
 ini_set('display_errors', 0);
 
 
-require_once('./GLOBALS.php');
-
 require_once('./libs/TwitterAPIExchange.php');
 
 
