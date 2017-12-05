@@ -77,7 +77,7 @@ $(function() {
 						try{ 
 							SHARED.save('twitter', data);								
 						}catch(err){							
-							$('#linkedin').html('<img src="./img/twitter.png"> <strong>&nbsp;Bad URL</strong>');
+							$('#twitter').html('<img src="./img/twitter.png"> <strong>&nbsp;Bad URL</strong>');
 						}
 				}
 			});
