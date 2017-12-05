@@ -1,12 +1,17 @@
 <?php
 ini_set('display_errors', 0);
+
+
+require_once('./GLOBALS.php');
+
 require_once('./libs/TwitterAPIExchange.php');
 
+
 $settings = array(
-    'oauth_access_token' 		=> "",
-    'oauth_access_token_secret' => "",
-    'consumer_key' 				=> "",
-    'consumer_secret' 			=> "",
+    'oauth_access_token'=>"YOUR-ACCESS-TOKEN",
+    'oauth_access_token_secret'=>"YOUR-ACCESS-TOKEN-SECRET",
+    'consumer_key'=>"YOUR-CUNSUMER-KEY",
+    'consumer_secret'=>"YOUR-CONSUMER-SECRET",
 );
 
 $total = 0;
