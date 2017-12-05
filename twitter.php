@@ -3,11 +3,10 @@ ini_set('display_errors', 0);
 require_once('./libs/TwitterAPIExchange.php');
 
 $settings = array(
-    'oauth_access_token' => "936522195957960704-GI4kw81YWfeNFqJXjTlgXBFz7aKVk3j",
-    'oauth_access_token_secret' => "u32RzOwgrAwYF5GEHWEu7BDPit2bVJ1Md6VlKiA595Mbq",
-    'consumer_key' => "PWiU40YrPB0GtLAAr7mMhZ4le",
-    'consumer_secret' => "WwduOigTTAztOc2hwFupSwNS0OxQzn9dfqvDmYGjwo4BNbgs0Q",
-	'count'=> 5,
+    'oauth_access_token' 		=> "",
+    'oauth_access_token_secret' => "",
+    'consumer_key' 				=> "",
+    'consumer_secret' 			=> "",
 );
 
 $total = 0;
