@@ -14,7 +14,7 @@
 	<div class="container">	
 		<form method="get" id="getShares">		
 			<div class="row">
-				<input type="text" name="url" id="url" class="form-control"  placeholder="URL" value="http://www.elpais.com"   />  
+				<input type="text" name="url" id="url" class="form-control"  placeholder="WRITE HERE THE URL" value=""   />  
 			</div>			
 			<div class="row alert alert-danger ">			 
 			</div>			
