@@ -9,4 +9,7 @@ Notas de la Solución:
 En las redes sociales twitter y facebook es necesario crear una aplicacion de desarrollador, hacerla pública y completar los datos de los token en los archivos: 
 
 ./twitter.php --> twitter
+
 ./js/index.js --> facebook
+
+./models/mysql.php --> datos de acceso a tu servidor Mysql
