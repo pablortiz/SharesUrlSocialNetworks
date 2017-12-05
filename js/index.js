@@ -117,6 +117,12 @@ jQuery(function($) {
   $('#getShares').submit(function(){
 	  	$(".alert-danger").hide();
 		$(".alert-danger").html("");
+	  	
+		if ($('#chk1').is(':checked')) $("#facebook").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#facebook").html("");
+		if ($('#chk2').is(':checked')) $("#linkedin").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#linkedin").html("");
+		if ($('#chk3').is(':checked')) $("#pinteres").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#pinterest").html("");
+		if ($('#chk4').is(':checked')) $("#twitter").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#twitter").html("");
+	
 		var url = $('#url').val();
 		var error ="";
 		if ( !url.length  ) {
