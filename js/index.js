@@ -2,7 +2,7 @@ var token = "";
 $(function() {	
 	SHARED = {
 		Url : '',		
-		FacebookToken :'666987483466439|b3e1a0948513223b0bc51b32a735e2cf',		
+		FacebookToken :'YOUR-FACEBOOK-TOKEN',		
 		getToken: function(facebook, linkedin, pinteres, twitter){
 			
 			$.ajax({
