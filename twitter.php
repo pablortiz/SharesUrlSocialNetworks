@@ -15,9 +15,9 @@ if ( isset ($_REQUEST["q"] ) )
 {	
 	$q = '?q='.$_REQUEST["q"].'&count=100';		
 	do {
-		$next = Search($q);
+		$q = Search($q);
 		sleep(.1);  
-	}while ( strlen($next) > 0   );
+	}while ( strlen($q) > 0   );
 	$ret =  strlen($error) ? $error: $total;
 	echo $ret ;
 }
