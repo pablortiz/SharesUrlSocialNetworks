@@ -117,12 +117,10 @@ jQuery(function($) {
   $('#getShares').submit(function(){
 	  	$(".alert-danger").hide();
 		$(".alert-danger").html("");
-	  	
-		if ($('#chk1').is(':checked')) $("#facebook").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#facebook").html("");
-		if ($('#chk2').is(':checked')) $("#linkedin").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#linkedin").html("");
-		if ($('#chk3').is(':checked')) $("#pinteres").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#pinterest").html("");
-		if ($('#chk4').is(':checked')) $("#twitter").html("<img src='./img/nbc-ajax-loader.gif' />");	else $("#twitter").html("");
-	
+		$("#facebook").html("");
+		$("#linkedin").html("");
+		$("#pinterest").html("");
+		$("#twitter").html("");
 		var url = $('#url').val();
 		var error ="";
 		if ( !url.length  ) {
@@ -138,6 +136,10 @@ jQuery(function($) {
 			$(".alert-danger").show();
 			$(".alert-danger").html(error);		
 		}else{
+			if ($('#chk1').is(':checked')) $("#facebook").html("<img src='./img/nbc-ajax-loader.gif' />");	
+			if ($('#chk2').is(':checked')) $("#linkedin").html("<img src='./img/nbc-ajax-loader.gif' />");	
+			if ($('#chk3').is(':checked')) $("#pinteres").html("<img src='./img/nbc-ajax-loader.gif' />");	
+			if ($('#chk4').is(':checked')) $("#twitter").html("<img src='./img/nbc-ajax-loader.gif' />");
 			SHARED.Url =   $('#url').val();
 			SHARED.getToken();
 		}		
